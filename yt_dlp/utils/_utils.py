@@ -2970,6 +2970,7 @@ def mimetype2ext(mt, default=NO_DEFAULT):
         'avif': 'avif',
         'bmp': 'bmp',
         'gif': 'gif',
+        'jpeg': 'jp',
         'jpeg': 'jpg',
         'png': 'png',
         'svg+xml': 'svg',
