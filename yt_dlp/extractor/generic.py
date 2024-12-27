@@ -2389,6 +2389,7 @@ class GenericIE(InfoExtractor):
         # to accept raw bytes and being able to download only a chunk.
         # It may probably better to solve this by checking Content-Type for application/octet-stream
         # after a HEAD request, but not sure if we can rely on this.
+<<<<<<< HEAD
         try:
             full_response = self._request_webpage(url, video_id, headers=filter_dict({
                 'Accept-Encoding': 'identity',
@@ -2412,6 +2413,12 @@ class GenericIE(InfoExtractor):
             raise ExtractorError(
                 f'{msg}try again with  --extractor-args "generic:impersonate"', expected=True)
 
+=======
+        full_response = self._request_webpage(url, video_id, headers=filter_dict({
+            'Accept-Encoding': 'identity',
+            'Referer': smuggled_data.get('referer'),
+        }), impersonate=impersonate, expected_status=404)
+>>>>>>> upstream/ie/generic/sheeta
         new_url = full_response.url
         if new_url != extract_basic_auth(url)[0]:
             self.report_following_redirect(new_url)
