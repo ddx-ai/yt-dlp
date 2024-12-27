@@ -1,44 +1,7 @@
-import json
-from ..utils._utils import ExtractorError
-from ..utils.traversal import traverse_obj
-from .common import InfoExtractor
 from .sheeta import SheetaEmbedIE
 
 
-class NiconicoChannelPlusBaseIE(InfoExtractor):
-    _WEBPAGE_BASE_URL = 'https://nicochannel.jp'
-
-    def _call_api(self, path, item_id, **kwargs):
-        return self._download_json(
-            f'https://api.nicochannel.jp/fc/{path}', video_id=item_id, **kwargs)
-
-    def _find_fanclub_site_id(self, channel_name):
-        fanclub_list_json = self._call_api(
-            'content_providers/channels', item_id=f'channels/{channel_name}',
-            note='Fetching channel list', errnote='Unable to fetch channel list',
-        )['data']['content_providers']
-        fanclub_id = traverse_obj(fanclub_list_json, (
-            lambda _, v: v['domain'] == f'{self._WEBPAGE_BASE_URL}/{channel_name}', 'id'),
-            get_all=False)
-        if not fanclub_id:
-            raise ExtractorError(f'Channel {channel_name} does not exist', expected=True)
-        return fanclub_id
-
-    def _get_channel_base_info(self, fanclub_site_id):
-        return traverse_obj(self._call_api(
-            f'fanclub_sites/{fanclub_site_id}/page_base_info', item_id=f'fanclub_sites/{fanclub_site_id}',
-            note='Fetching channel base info', errnote='Unable to fetch channel base info', fatal=False,
-        ), ('data', 'fanclub_site', {dict})) or {}
-
-    def _get_channel_user_info(self, fanclub_site_id):
-        return traverse_obj(self._call_api(
-            f'fanclub_sites/{fanclub_site_id}/user_info', item_id=f'fanclub_sites/{fanclub_site_id}',
-            note='Fetching channel user info', errnote='Unable to fetch channel user info', fatal=False,
-            data=json.dumps('null').encode('ascii'),
-        ), ('data', 'fanclub_site', {dict})) or {}
-
-
-class NiconicoChannelPlusIE(NiconicoChannelPlusBaseIE):
+class NiconicoChannelPlusIE(SheetaEmbedIE):
     IE_NAME = 'NiconicoChannelPlus'
     IE_DESC = 'ニコニコチャンネルプラス'
     _VALID_URL = r'https?://nicochannel\.jp/(?P<channel>[\w.-]+)/(?:video|live)/(?P<code>sm\w+)'
