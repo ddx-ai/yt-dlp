@@ -941,9 +941,9 @@
  - **niconico:playlist**
  - **niconico:series**
  - **niconico:tag**: NicoNico video tag URLs
- - **NiconicoChannelPlus**: ニコニコチャンネルプラス
- - **NiconicoChannelPlus:​channel:lives**: ニコニコチャンネルプラス - チャンネル - ライブリスト. nicochannel.jp/channel/lives
- - **NiconicoChannelPlus:​channel:videos**: ニコニコチャンネルプラス - チャンネル - 動画リスト. nicochannel.jp/channel/videos
+ - **NiconicoChannelPlus**: [*sheeta*](## "netrc machine") ニコニコチャンネルプラス
+ - **NiconicoChannelPlus:​channel:lives**: [*sheeta*](## "netrc machine") ニコニコチャンネルプラス - チャンネル - ライブリスト. nicochannel.jp/channel/lives
+ - **NiconicoChannelPlus:​channel:videos**: [*sheeta*](## "netrc machine") ニコニコチャンネルプラス - チャンネル - 動画リスト. nicochannel.jp/channel/videos
  - **NiconicoUser**
  - **nicovideo:search**: Nico video search; "nicosearch:" prefix
  - **nicovideo:​search:date**: Nico video search, newest first; "nicosearchdate:" prefix
@@ -1306,6 +1306,7 @@
  - **ShahidShow**
  - **SharePoint**
  - **ShareVideosEmbed**
+ - **sheeta**: [*sheeta*](## "netrc machine") fan club system developed by DWANGO (ドワンゴ)
  - **ShemarooMe**
  - **ShowRoomLive**
  - **ShugiinItvLive**: 衆議院インターネット審議中継
