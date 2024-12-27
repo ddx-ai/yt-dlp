@@ -1,3 +1,6 @@
+import json
+from ..utils._utils import ExtractorError
+from ..utils.traversal import traverse_obj
 from .common import InfoExtractor
 from .sheeta import SheetaEmbedIE
 
