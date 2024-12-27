@@ -1,3 +1,4 @@
+from .common import InfoExtractor
 from .sheeta import SheetaEmbedIE
 
 
