@@ -4,6 +4,22 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2024.12.27.050322
+
+#### Core changes
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ca07e4841ecd93e0e6ec930b5bd49a3542931d5b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/3d84ded7ed89e9296125e5c230b1fe58dcf871ec) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/e69d284fe3b39a2eb0e30b17c5e4c93758bb0dd6) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/ca9dd744fc58857fa10824312f7c4ea2ad7823d1) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/b1bff65f8829394131ee0b116dfbdff076f00296) by [pukkandan](https://github.com/pukkandan)
+- [fix niconicoplus](https://github.com/yt-dlp/yt-dlp/commit/7282cfedd5aee632a99adcd601badffb33fc42f9) by [pukkandan](https://github.com/pukkandan)
+- [fix niconicoplus](https://github.com/yt-dlp/yt-dlp/commit/e6a100646ed320975077132b3a8532f195d17a5d) by [pukkandan](https://github.com/pukkandan)
+- [generic](https://github.com/yt-dlp/yt-dlp/commit/78a04e097e9a9b7f22c6463036b3fbd4649a69db) by [pukkandan](https://github.com/pukkandan)
+- [reset](https://github.com/yt-dlp/yt-dlp/commit/3407c9333f630dde205d40463a284e0e7aca9f1a) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **youtube**: [Fix DASH formats incorrectly skipped in some situations](https://github.com/yt-dlp/yt-dlp/commit/0b6b7742c2e7f2a1fcb0b54ef3dd484bab404b3f) ([#11910](https://github.com/yt-dlp/yt-dlp/issues/11910)) by [coletdjnz](https://github.com/coletdjnz)
+
 ### 2024.12.23
 
 #### Core changes
