@@ -1,7 +1,6 @@
 from .sheeta import SheetaEmbedIE
 
 
-<<<<<<< HEAD
 class NiconicoChannelPlusBaseIE(InfoExtractor):
     _WEBPAGE_BASE_URL = 'https://nicochannel.jp'
 
@@ -36,9 +35,6 @@ class NiconicoChannelPlusBaseIE(InfoExtractor):
 
 
 class NiconicoChannelPlusIE(NiconicoChannelPlusBaseIE):
-=======
-class NiconicoChannelPlusIE(SheetaEmbedIE):
->>>>>>> upstream/ie/generic/sheeta
     IE_NAME = 'NiconicoChannelPlus'
     IE_DESC = 'ニコニコチャンネルプラス'
     _VALID_URL = r'https?://nicochannel\.jp/(?P<channel>[\w.-]+)/(?:video|live)/(?P<code>sm\w+)'
