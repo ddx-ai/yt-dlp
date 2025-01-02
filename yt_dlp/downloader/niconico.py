@@ -190,7 +190,7 @@ class NiconicoLiveFD(FragmentFD):
                     total_duration = int(float(line.split(':')[1]))
                 if '#EXT-X-TARGETDURATION' in line:
                     fragment_duration = int(line.split(':')[1])
-            if not (total_duration and fragment_duration):
+            if not all({total_duration, fragment_duration}):
                 raise DownloadError('Unable to get required video info')
 
             ctx = {
