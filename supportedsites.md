@@ -937,7 +937,7 @@
  - **nickelodeonru**
  - **niconico**: [*niconico*](## "netrc machine") ニコニコ動画
  - **niconico:history**: NicoNico user history or likes. Requires cookies.
- - **niconico:live**: ニコニコ生放送
+ - **niconico:live**: [*niconico*](## "netrc machine") ニコニコ生放送
  - **niconico:playlist**
  - **niconico:series**
  - **niconico:tag**: NicoNico video tag URLs
@@ -1086,6 +1086,7 @@
  - **pluralsight**: [*pluralsight*](## "netrc machine")
  - **pluralsight:course**
  - **PlutoTV**: (**Currently broken**)
+ - **PlVideo**: Платформа
  - **PodbayFM**
  - **PodbayFMChannel**
  - **Podchaser**

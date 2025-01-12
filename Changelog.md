@@ -4,6 +4,34 @@
 # To create a release, dispatch the https://github.com/yt-dlp/yt-dlp/actions/workflows/release.yml workflow on master
 -->
 
+### 2025.01.12.023613
+
+#### Core changes
+- [Fix filename sanitization with `--no-windows-filenames`](https://github.com/yt-dlp/yt-dlp/commit/8346b549150003df988538e54c9d8bc4de568979) ([#11988](https://github.com/yt-dlp/yt-dlp/issues/11988)) by [bashonly](https://github.com/bashonly)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/ca07e4841ecd93e0e6ec930b5bd49a3542931d5b) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/3d84ded7ed89e9296125e5c230b1fe58dcf871ec) by [pukkandan](https://github.com/pukkandan)
+- [Merge branch 'yt-dlp:master' into master](https://github.com/yt-dlp/yt-dlp/commit/6ea586f3e3845515a4ebab8aa030f7bc4158b024) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/e69d284fe3b39a2eb0e30b17c5e4c93758bb0dd6) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/ca9dd744fc58857fa10824312f7c4ea2ad7823d1) by [pukkandan](https://github.com/pukkandan)
+- [Resolve merge conflicts](https://github.com/yt-dlp/yt-dlp/commit/b1bff65f8829394131ee0b116dfbdff076f00296) by [pukkandan](https://github.com/pukkandan)
+- [Validate retries values are non-negative](https://github.com/yt-dlp/yt-dlp/commit/1f4e1e85a27c5b43e34d7706cfd88ffce1b56a4a) ([#11927](https://github.com/yt-dlp/yt-dlp/issues/11927)) by [Strkmn](https://github.com/Strkmn)
+- [fix niconicoplus](https://github.com/yt-dlp/yt-dlp/commit/7282cfedd5aee632a99adcd601badffb33fc42f9) by [pukkandan](https://github.com/pukkandan)
+- [fix niconicoplus](https://github.com/yt-dlp/yt-dlp/commit/e6a100646ed320975077132b3a8532f195d17a5d) by [pukkandan](https://github.com/pukkandan)
+- [generic](https://github.com/yt-dlp/yt-dlp/commit/78a04e097e9a9b7f22c6463036b3fbd4649a69db) by [pukkandan](https://github.com/pukkandan)
+- [niconico](https://github.com/yt-dlp/yt-dlp/commit/0a62a28dbe2a9ab67fea92be86214bd4bfb72196) by [pukkandan](https://github.com/pukkandan)
+- [niconico](https://github.com/yt-dlp/yt-dlp/commit/e624ae517aa206cfdc027429edcbfbddc8f22de7) by [pukkandan](https://github.com/pukkandan)
+- [niconico](https://github.com/yt-dlp/yt-dlp/commit/c71e30c4a6a1cbd1907265bd056725e80a52bf2e) by [pukkandan](https://github.com/pukkandan)
+- [reset](https://github.com/yt-dlp/yt-dlp/commit/3407c9333f630dde205d40463a284e0e7aca9f1a) by [pukkandan](https://github.com/pukkandan)
+- [reset](https://github.com/yt-dlp/yt-dlp/commit/414ae12e7043ba8ac8872f2c3ed4ad7dcae277c3) by [pukkandan](https://github.com/pukkandan)
+
+#### Extractor changes
+- **plvideo**: [Add extractor](https://github.com/yt-dlp/yt-dlp/commit/3c14e9191f3035b9a729d1d87bc0381f42de57cf) ([#10657](https://github.com/yt-dlp/yt-dlp/issues/10657)) by [Sanceilaks](https://github.com/Sanceilaks), [seproDev](https://github.com/seproDev)
+- **xiaohongshu**: [Extend `_VALID_URL`](https://github.com/yt-dlp/yt-dlp/commit/763ed06ee69f13949397897bd42ff2ec3dc3d384) ([#11806](https://github.com/yt-dlp/yt-dlp/issues/11806)) by [HobbyistDev](https://github.com/HobbyistDev)
+- **youtube**
+    - [Fix DASH formats incorrectly skipped in some situations](https://github.com/yt-dlp/yt-dlp/commit/0b6b7742c2e7f2a1fcb0b54ef3dd484bab404b3f) ([#11910](https://github.com/yt-dlp/yt-dlp/issues/11910)) by [coletdjnz](https://github.com/coletdjnz)
+    - [Refactor cookie auth](https://github.com/yt-dlp/yt-dlp/commit/75079f4e3f7dce49b61ef01da7adcd9876a0ca3b) ([#11989](https://github.com/yt-dlp/yt-dlp/issues/11989)) by [coletdjnz](https://github.com/coletdjnz)
+    - [Use `tv` instead of `mweb` client by default](https://github.com/yt-dlp/yt-dlp/commit/712d2abb32f59b2d246be2901255f84f1a4c30b3) ([#12059](https://github.com/yt-dlp/yt-dlp/issues/12059)) by [coletdjnz](https://github.com/coletdjnz)
+
 ### 2024.12.23
 
 #### Core changes
