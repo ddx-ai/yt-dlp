@@ -224,6 +224,7 @@ The only reliable way to check if a site is supported is to try it.
  - **bt:vestlendingen**: Bergens Tidende - Vestlendingen
  - **Bundesliga**
  - **Bundestag**
+ - **BunnyCdn**
  - **BusinessInsider**
  - **BuzzFeed**
  - **BYUtv**: (**Currently broken**)
@@ -944,7 +945,7 @@ The only reliable way to check if a site is supported is to try it.
  - **nickelodeonru**
  - **niconico**: [*niconico*](## "netrc machine") ニコニコ動画
  - **niconico:history**: NicoNico user history or likes. Requires cookies.
- - **niconico:live**: ニコニコ生放送
+ - **niconico:live**: [*niconico*](## "netrc machine") ニコニコ生放送
  - **niconico:playlist**
  - **niconico:series**
  - **niconico:tag**: NicoNico video tag URLs
