@@ -869,6 +869,7 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
         if data := self._search_json(self._YT_INITIAL_DATA_ALT_RE, webpage, 'data', item_id, default=None):
             self.write_debug('Parsed initial data from dedicated script element')
             return data
+
         return self._search_json(self._YT_INITIAL_DATA_RE, webpage, 'yt initial data', item_id, fatal=fatal)
 
     @staticmethod
